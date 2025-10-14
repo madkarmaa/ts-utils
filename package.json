@@ -1,0 +1,34 @@
+{
+  "name": "@madkarma/ts-utils",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.6",
+    "@types/bun": "latest",
+    "tsdown": "^0.15.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "exports": {
+    "./array": {
+      "default": "./dist/array.js",
+      "types": "./dist/array.d.ts"
+    },
+    "./boolean": {
+      "default": "./dist/boolean.js",
+      "types": "./dist/boolean.d.ts"
+    },
+    "./number": {
+      "default": "./dist/number.js",
+      "types": "./dist/number.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "description": "A collection of TypeScript utilities I find myself using often.",
+  "scripts": {
+    "biome": "biome check --write",
+    "ci": "biome ci",
+    "build": "tsdown"
+  },
+  "type": "module"
+}
