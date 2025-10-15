@@ -9,4 +9,4 @@ Boolean.random = (chance: number = 50): boolean => {
     return Math.random() < chance / 100;
 };
 
-export type __make_module = undefined;
+export {};

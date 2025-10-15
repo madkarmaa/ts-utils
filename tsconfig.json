@@ -3,15 +3,17 @@
         // Environment setup & latest features
         "lib": ["ESNext"],
         "target": "ESNext",
-        "module": "Preserve",
+        "module": "ESNext",
         "moduleDetection": "force",
         "jsx": "react-jsx",
 
-        // Bundler mode
+        // Output configuration
         "moduleResolution": "bundler",
-        "allowImportingTsExtensions": true,
         "verbatimModuleSyntax": true,
-        "noEmit": true,
+        "outDir": "dist",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
 
         // Best practices
         "strict": true,
@@ -25,6 +27,6 @@
         "noUnusedParameters": false,
         "noPropertyAccessFromIndexSignature": false
     },
-    "include": ["src", "scripts"],
+    "include": ["src"],
     "exclude": ["node_modules", "dist"]
 }
