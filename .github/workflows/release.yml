@@ -41,4 +41,4 @@ jobs:
               run: bun run build
 
             - name: Publish to NPM
-              run: bun publish --tolerate-republish
+              run: bunx npm@latest publish
