@@ -33,6 +33,7 @@
         "biome": "biome check --write",
         "ci": "biome ci",
         "build": "tsc",
+        "dev": "tsc --watch",
         "tags": "git push origin --tags && git push",
         "patch": "bun pm version patch && bun run tags",
         "minor": "bun pm version minor && bun run tags",
