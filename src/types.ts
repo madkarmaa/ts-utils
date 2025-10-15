@@ -17,8 +17,8 @@ export type JSONPrimitive = string | number | boolean | null | undefined;
  * Represents any value that can be serialized to JSON.
  */
 export type JSONSerializable =
-	| JSONPrimitive
-	| JSONSerializable[]
-	| {
-			[key: string]: JSONSerializable;
-	  };
+    | JSONPrimitive
+    | JSONSerializable[]
+    | {
+          [key: string]: JSONSerializable;
+      };
