@@ -22,7 +22,7 @@
             "types": "./dist/number.d.ts"
         }
     },
-    "description": "A collection of TypeScript utilities I find myself using often.",
+    "description": "A collection of TypeScript utilities I find myself using often",
     "scripts": {
         "biome": "biome check --write",
         "ci": "biome ci",
