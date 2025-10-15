@@ -21,7 +21,12 @@
         "./number": {
             "default": "./dist/number.js",
             "types": "./dist/number.d.ts"
-        }
+        },
+        "./types": {
+            "default": "./dist/types.js",
+            "types": "./dist/types.d.ts"
+        },
+        "./package.json": "./package.json"
     },
     "description": "A collection of TypeScript utilities I find myself using often",
     "scripts": {
