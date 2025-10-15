@@ -26,7 +26,11 @@
     "scripts": {
         "biome": "biome check --write",
         "ci": "biome ci",
-        "build": "tsc"
+        "build": "tsc",
+        "tags": "git push origin --tags",
+        "patch": "bun pm version patch && bun run tags",
+        "minor": "bun pm version minor && bun run tags",
+        "major": "bun pm version major && bun run tags"
     },
     "type": "module",
     "files": [
