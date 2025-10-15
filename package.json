@@ -49,5 +49,6 @@
     },
     "simple-git-hooks": {
         "pre-commit": "bun run biome"
-    }
+    },
+    "license": "MIT"
 }
