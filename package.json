@@ -28,5 +28,8 @@
         "ci": "biome ci",
         "build": "tsc"
     },
-    "type": "module"
+    "type": "module",
+    "files": [
+        "dist"
+    ]
 }
