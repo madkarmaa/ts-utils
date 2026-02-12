@@ -19,6 +19,6 @@ export const ok = <T>(value: T): Result<T, never> => [value, null];
  * @param error - The error to wrap in a failed result. Must have a `code` property.
  * @returns A `Result` representing a failed outcome.
  */
-export const err = <const M extends string, E extends { code: M }>(
+export const err = <const C extends string, E extends { code: C }>(
     error: E
 ): Result<never, E> => [null, error];
