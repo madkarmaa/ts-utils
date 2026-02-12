@@ -2,9 +2,9 @@
     "name": "@madkarma/ts-utils",
     "version": "1.1.2",
     "devDependencies": {
-        "@biomejs/biome": "2.2.6",
+        "@clack/prompts": "^1.0.0",
         "@types/bun": "latest",
-        "simple-git-hooks": "^2.13.1"
+        "prettier": "3.8.1"
     },
     "peerDependencies": {
         "typescript": "^5.9.3"
@@ -34,10 +34,12 @@
         "ci": "biome ci",
         "build": "tsc",
         "dev": "tsc --watch",
+        "format": "prettier --write --ignore-unknown .",
         "tags": "git push origin --tags && git push",
         "patch": "bun pm version patch && bun run tags",
         "minor": "bun pm version minor && bun run tags",
-        "major": "bun pm version major && bun run tags"
+        "major": "bun pm version major && bun run tags",
+        "postinstall": "bun run scripts/setup.ts"
     },
     "type": "module",
     "files": [
@@ -46,9 +48,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/madkarmaa/ts-utils.git"
-    },
-    "simple-git-hooks": {
-        "pre-commit": "bun run biome"
     },
     "license": "MIT"
 }

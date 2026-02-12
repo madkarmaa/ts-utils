@@ -1,0 +1,4 @@
+dist/
+node_modules/
+.githooks/
+bun.lock
