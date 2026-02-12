@@ -11,7 +11,7 @@ const isAlreadySetup = currentHooksDir.trim() === HOOKS_DIR;
 
 if (process.env.CI || isAlreadySetup) process.exit(0);
 
-await $`git config core.hooksPath ${HOOKS_DIR}`;
+await $`git config core.hooksPath ${HOOKS_DIR}`.quiet();
 
 const FILES_TO_UPDATE = [
     'package.json',
@@ -53,7 +53,5 @@ for (const filePath of FILES_TO_UPDATE)
 
         await Bun.write(filePath, content);
     } catch {}
-
-$`git config core.hooksPath ${HOOKS_DIR}`.quiet();
 
 outro('Setup complete!');
