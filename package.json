@@ -34,8 +34,6 @@
     },
     "description": "A collection of TypeScript utilities I find myself using often",
     "scripts": {
-        "biome": "biome check --write",
-        "ci": "biome ci",
         "build": "tsc",
         "dev": "tsc --watch",
         "format": "prettier --write --ignore-unknown .",
