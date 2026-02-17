@@ -1,6 +1,6 @@
 {
     "name": "@madkarma/ts-utils",
-    "version": "3.1.0",
+    "version": "4.0.0",
     "devDependencies": {
         "@clack/prompts": "^1.0.0",
         "@types/bun": "latest",
