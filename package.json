@@ -30,6 +30,10 @@
             "default": "./dist/result.js",
             "types": "./dist/result.d.ts"
         },
+        "./string": {
+            "default": "./dist/string.js",
+            "types": "./dist/string.d.ts"
+        },
         "./package.json": "./package.json"
     },
     "description": "A collection of TypeScript utilities I find myself using often",
